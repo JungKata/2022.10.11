@@ -81,8 +81,13 @@ document.addEventListener('DOMContentLoaded', function(){
         t.forEach(e => console.log(e));
     }
 
+    // Nem tiszta - a document nem parameter v. lokális változó
     function getButtonColor(){
         return document.getElementById('szinezes').style.backgroundColor;
+    }
+
+    function getDateStrint(){
+        return (new Date()).toISOString();
     }
 
 
